@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="stylesheet" href="page.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Mediretrats.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+
+<body>
+   
+    <script>
+        $(document).ready(function () {
+            // Initialize Owl Carousel
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
+        
+            // Smooth scrolling
+            $('.SecondNav-Bar a').on('click', function (event) {
+                event.preventDefault(); // Prevent default anchor click behavior
+                var target = $(this.getAttribute('href')); // Get the target section
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 50 // Adjust the offset if needed
+                    }, 1000); // Duration in milliseconds
+                }
+            });
+        });
+        </script>
+        
+
+
+    
+   
+    <div class="content">
+ <!-- first navBar -->
+    <nav class="Firstnav-bar">
+        <div class="nav-leftside">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Treatment+</div>
+        <div>Hospitals</div>
+        <div>FAQs</div>
+        <div>Blog</div>
+        <div>Request A Quote</div>
+       </div>
+       <div class="nav-rightside">
+        <div class="searching">
+            <i class="fa fa-search"></i> 
+            <input type="text" placeholder="Search.." name="search">
+           
+               
+           </div>
+       </div>
+    </nav>
+   <!-- first page -->
+    <section class="FirstPage">
+        <div class="Homepage-leftside-content">
+         <p>Home<span>></span>Treatment <span>></span>Orthopaedics <span>></span>Knee Replacement</p>
+         <h1>Total Knee Replacement</h1>
+         <p>Total Knee replacement is a surgery to remove and replace the whole <br> damaged knee with an artificial joint.</p>
+         <button><a href="#">Enquire Now</a></button>
+        </div>
+
+        <div class="Homepage-rightside-content">
+         <img src="/KneeHomepage.jpg" alt="">
+        </div>
+    </section>
+      <!-- second navbar -->
+    
+     <nav class="SecondNav-Bar">
+        <div >
+            <ul class="list-navbar">
+                <li><a  class="links"  href="#overview">Overview</a></li>
+                <li><a class="links" href="#eligibility">Eligibility</a></li>
+                <li><a class="links" href="#preparation">Preparation</a></li>
+                <li><a class="links" href="#post-treatment">Post-Treatment Care</a></li>
+                <li><a class="links" href="#recovery-tips">Recovery Tips</a></li>
+                <li><a class="links" href="#faqs">FAQs</a></li>
+                <li><a class="links" href="#patient-stories">Patient Stories</a></li>
+            </ul>
+        </div>
+     </nav>
+    <!-- second page -->
+     <section class="secondPage" id="overview">
+     <div class="Overview-leftSide">
+        <h1>Treatment Overview</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo exercitationem saepe impedit provident dolorum ullam libero at. Pariatur at necessitatibus obcaecati aspernatur.</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eum repellat laborum ex id, labore rem quam perferendis nesciunt nisi voluptatem ab alias nihil fugiat illum et? Id ad dolore, qui dolor doloribus expedita consectetur assumenda cumque eveniet fugit minima porro unde tenetur exercitationem est a ullam facere dolorum eum?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat nam quidem dignissimos id aliquid.</p>
+     </div>
+
+     <div class="Overview-rightSide">
+          <img src="/doctor-patient-communication.jpg" alt="sorry we can not load image" loading="lazy">
+     </div>
+     </section>
+        <hr>
+           <!-- third page -->
+        <section class="ThirdPage" id="eligibility">
+            <div class="thirtPage-left">
+                <h1>Eligibility For Treatment</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae corrupti libero voluptas ullam voluptatum provident, ipsa minus autem fugit quaerat! Atque repellendus error animi reiciendis. Ea eos, neque obcaecati quos pariatur iure nulla amet. Tempore, nostrum? Quis libero laborum eligendi dolorum id repellendus minima veniam. Excepturi repellat qui quaerat minus</p>
+             <p>In general,gastric bypass could be a good option if.</p>
+
+        <ul>
+            <li>The BMI(body mass index)is 40 or more</li>
+            <li>Your BMI is 30 or more with server weight-related health condition like type-2 disbetes and high blood pressure</li>
+            <li>You are willing to make permanent changes in the lifestyle</li>
+        </ul>
+            </div>
+
+        <div class="thirtPage-right">
+            <h1>Need Help?</h1>
+            <p>Just let us know. We will be happy to <br> assist you.</p>
+        <form>
+         <input type="text" placeholder="Full name">
+         <input type="email" placeholder="Email">
+         <input type="text" placeholder="Phone Number">
+        <textarea name="Describe Your tratement Requirment">Describe Your tratement Requirment</textarea>
+         <button>Send Enquiry</button>
+        </form>
+        </div>
+
+
+        </section>
+ <hr>
+ <!-- FourthPg\age -->
+        <section class="FourthPage" id="preparation">
+            <h1>Preparation Before Treatement</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae corrupti libero voluptas ullam voluptatum provident, ipsa minus autem fugit quaerat! Atque repellendus error animi reiciendis. Ea eos, neque obcaecati quos pariatur iure nulla amet. Tempore, nostrum? Quis libero laborum eligendi dolorum id repellendus minima veniam. Excepturi repellat qui quaerat minus</p>
+            <p>In general,gastric bypass could be a good option if.</p>
+
+       <ul>
+           <li>The BMI(body mass index)is 40 or more</li>
+           <li>Your BMI is 30 or more with server weight-related health condition like type-2 disbetes and high blood pressure</li>
+           <li>You are willing to make permanent changes in the lifestyle</li>
+       </ul>
+        </section>
+  <hr>
+  <!-- Fifth page -->
+        <section class="fifthPage" id="post-treatment">
+      <h1>Post-Treatment Care Treatment.</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae corrupti libero voluptas ullam voluptatum provident, ipsa minus autem fugit quaerat! Atque repellendus error animi reiciendis. Ea eos, neque obcaecati quos pariatur iure nulla amet. Tempore, nostrum? Quis libero laborum eligendi dolorum id repellendus minima veniam. Excepturi repellat qui quaerat minus</p>
+      <p>In general,gastric bypass could be a good option if.</p>
+
+ <ul>
+     <li>The BMI(body mass index)is 40 or more</li>
+     <li>Your BMI is 30 or more with server weight-related health condition like type-2 disbetes and high blood pressure</li>
+     <li>You are willing to make permanent changes in the lifestyle</li>
+ </ul>
+        </section>
+  <hr>
+  <!-- Sixth Page -->
+        <section class="sixthPage" id="recovery-tips">
+            <h1>Treatment Recovery Tips.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae corrupti libero voluptas ullam voluptatum provident, ipsa minus autem fugit quaerat! Atque repellendus error animi reiciendis. Ea eos, neque obcaecati quos pariatur iure nulla amet. Tempore, nostrum? Quis libero laborum eligendi dolorum id repellendus minima veniam. Excepturi repellat qui quaerat minus</p>
+            <p>In general,gastric bypass could be a good option if.</p>
+      
+       <ul>
+           <li>The BMI(body mass index)is 40 or more</li>
+           <li>Your BMI is 30 or more with server weight-related health condition like type-2 disbetes and high blood pressure</li>
+           <li>You are willing to make permanent changes in the lifestyle</li>
+       </ul>
+    </section>
+     <hr>
+     <!-- Seventh page -->
+ <section class="seventhPage" id="faqs">
+        <h1>Treatment FAQs.</h1>
+        <hr>
+        <p><span>+ </span> How do I know the clinic searching is verified ?</p>
+        <hr>
+        <p><span>+  </span>  I can't travel alone so can some family member or friend of mine accompany me?</p>
+        <hr>
+        <p><span>- </span> Can I see my doctor before I decide and what about my post recovery ?</p>
+        <hr>
+        <div><p>yes,pre and post tratement consultation can be done.you can to the doctor at the most appropriate time(before you decide to travel)
+            to boost confidence.The team at Mediretrats will also help you with arranging the OPD'S after the surgeris. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat molestiae id quo minus pariatur. Possimus blanditiis optio quae unde natus?
+        </p></div>
+        <hr>
+        <p><span>+</span>How do I share my report and medical cases with clinic of my choice?</p>
+        <hr>
+
+        <div></div>
+</section>
+
+<section class="eightthPage" id="patient-stories">
+    <h1>Patient Stories & Videos</h1>
+    <div class="owl-carousel owl-theme">
+        <div class="box-content">
+            <div class="sub-content">
+                <div>UnderWent Procedure for retinal detachment</div>
+                <div class="exlametry">"</div>
+            </div>
+            <div class="video"><img src="/doctor-patient-communication.jpg" alt="" loading="lazy"></div>
+            <div class="profile-content">
+                <div><img src="/OIP.jpeg" alt=""></div>
+                <div>
+                    <h1>Luke Olfert</h1>
+                    <p>New York, USA</p>
+                </div>
+            </div>
+        </div>
+        <div class="box-content">
+            <div class="sub-content">
+                <div>UnderWent Procedure for retinal detachment</div>
+                <div class="exlametry">"</div>
+            </div>
+            <div class="video"><img src="doctor-patient-communication.jpg" alt="" loading="lazy"></div>
+            <div class="profile-content">
+                <div><img src="/doctor-offering-medical.avif" alt="" loading="lazy"></div>
+                <div>
+                    <h1>Luke Olfert</h1>
+                    <p>New York, USA</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Secondbox-content">
+            <div class="sub-content">
+                <div>UnderWent Procedure for retinal detachment</div>
+                <div class="exlametry">"</div>
+            </div>
+            <div class="contentOF-secondBOX">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nesciunt placeat esse mollitia eum provident culpa aperiam dolore quos minus. Beatae explicabo vel in, qui ratione sunt eveniet, maiores aliquid optio, facilis ut rerum? Recusandae magni consequatur animi aspernatur totam soluta quod iste, dolor eum, ipsam reprehenderit assumenda deleniti alias.
+            </div>
+            <div class="profile-content">
+                <div><img src="/profile.jpg" alt="" loading="lazy"></div>
+                <div>
+                    <h1>Luke Olfert</h1>
+                    <p>New York, USA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+       <!-- ninth Page -->
+
+       <section class="ninth-page">
+        <h2>Doctor</h2>
+        <h1>Top Orthopaedic <span>Doctors</span></h1>
+    
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="doctors-data">
+                    <div class="doctor-image">
+                        <img src="/doctor-offering-medical.avif" alt="Dr. Faique Falke">
+                    </div>
+                    <div>
+                        <h1>Dr. Faique Falke</h1>
+                        <h2>Mussafah Industrial - Abu Dhabi</h2>
+                        <p>Doctorate & Specialist</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="item">
+                <div class="doctors-data">
+                    <div class="doctor-image">
+                        <img src="/OIP.jpeg" alt="Dr. Sara Ahmed">
+                    </div>
+                    <div>
+                        <h1>Dr. Sara Ahmed</h1>
+                        <h2>Al Zahiyah - Abu Dhabi</h2>
+                        <p>Orthopedic Surgeon</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="item">
+                <div class="doctors-data">
+                    <div class="doctor-image">
+                        <img src="/profile.jpg" alt="Dr. John Doe">
+                    </div>
+                    <div>
+                        <h1>Dr. John Doe</h1>
+                        <h2>Khalifa City - Abu Dhabi</h2>
+                        <p>Consultant Orthopedic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- tenth page  -->
+     <section class="tenth-page">
+        <h2>Hospitals</h2>
+        <h1>Recommended <span>Hospitals</span></h1>
+        <div class="owl-carousel owl-theme">
+            <div class="hospital-data">
+                <div class="hospital-image">
+                    <img src="/hospital1.jpeg" alt="Apollo Hospital" loading="lazy">
+                </div>
+                <div>
+                    <h1>Apollo Hospital</h1>
+                    <p>Bangalore</p>
+                </div>
+            </div>
+            <div class="hospital-data">
+                <div class="hospital-image">
+                    <img src="/hospital2.jpg" alt="Mendanta Hospital" loading="lazy">
+                </div>
+                <div>
+                    <h1>Mendanta Hospital</h1>
+                    <p>Gurgaon</p>
+                </div>
+            </div>
+            <div class="hospital-data">
+                <div class="hospital-image">
+                    <img src="/hospital3.jpg" alt="Jaslok Hospital" loading="lazy">
+                </div>
+                <div>
+                    <h1>Jaslok Hospital</h1>
+                    <p>Mumbai</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Don't hesitate, contact us for better service. <a href="#">Explore all hospitals</a></p>
+        </div>
+    </section>
+    
+      <!-- Footer -->
+     <footer>
+        <!-- footer upper content -->
+        <div class="uper-content">
+            <h3>Stay healthy and strong to enjoy life</h3>
+            <h1>We have team of healthcare expert</h1>
+           <div class="uppr-content-subData">
+            <div>
+                <button><a href="#" class="Get-in-touch">Get In Touch</a></button>
+            </div>
+            <div>
+         <p> |+91 898 777 9999</p>
+            </div>
+           </div>
+        </div>
+      <!-- footer middel content -->
+        <div class="Middel-conetent-of-footer">
+            <div class="firstst-content">
+                <h1>Important Links</h1>
+                <ul>
+                    <li><span>-</span>Home</li>
+                    <li><span>-</span>About Us</li>
+                    <li><span>-</span>FAQs</li>
+                    <li><span>-</span>Blog</li>
+                    <li><span>-</span>Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="second-content">
+                <h1>Top Hospitals</h1>
+                <ul>
+                    <li><span>-</span>Apollo Hospital Delhi</li>
+                    <li><span>-</span>Medanta Hospital Gurgaon</li>
+                    <li><span>-</span>Max Hospital Delhi</li>
+                    <li><span>-</span>Jaslok hospital Mumbai</li>
+                    <li><span>-</span>Fortis Hospital gurgaon</li>
+                    <li><span>-</span>View All</li>
+                </ul>
+            </div>
+
+            <div class="third-content">
+                <h1>Speciality Treatment</h1>
+                <ul>
+                    <li><span>-</span>Knee Replacement</li>
+                    <li><span>-</span>Urologist</li>
+                    <li><span>-</span>Spine Surgon</li>
+                    <li><span>-</span>ENT Surgons</li>
+                    <li><span>-</span>Cardiologist</li>
+                    <li><span>-</span>View All</li>
+                </ul>
+            </div>
+
+            <div class="fourtth-content">
+                <div class="white-box">
+                <div class="unique-content">
+                  <div> <i class="fas fa-user-plus"></i></div>
+
+                  <div><p>Are you doctor / hospital?</p>
+                     <h1>Join Mediretrats</h1>
+                 </div>
+             </div>
+             <div class="unique-content-under-text">
+                <p>Lorem ipsum dolar sit amet,contetur <br>
+         adipiscing elit,sed do elusmod</p>
+            </div>
+            </div>
+
+                <div class="medical-tourism-destination">
+                    <h1>Medical Tourism Destination</h1>
+                <ul>
+                    <li><span>-</span>Medical Tourism Destination</li>
+                    <li><span>-</span>Medical Tourism in Sri Lanka</li>
+                    <li><span>-</span>Medical Tourism in UAE</li>
+                    <li><span>-</span>View All</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+          <hr>
+        <!-- last content -->
+        <div class="footer-last">
+            <div class="Last-content">
+                <div>
+                  <img src="/logo (1).png" alt="sorry!" loading="lazy">
+                </div>
+                <div class="middel-conetent-div">
+                 <h1>About Afiya Mediretreats</h1>
+                 <p><span>Aafiya Mediretreats</span> is a free,confidential,independant resources for patients <br>and industry provider. Our
+                  mission is to provide a central portal where patient,Mediacl Tourism provider,hospital,clinics,employes,and insurance <br>companies can all find the information they need.Our site focuses on patients <br>looking for specific knowlwdgw in the fields of medical tourism,dental tourism, <br>and health tourism.</p>
+                </div>
+     
+                <div class="Follow-us-on-div">
+               <h1>Follow Us On</h1>
+                 <p class="logo">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                 </p>
+                 <p>Customer Service</p>
+                  <h2>+91 9856555666</h2>
+                </div>
+              </div>
+         <!-- last blue line content -->
+              <div class="last-blue-content">
+           <div><p>Copyright 2020 Afiya Mediretreats.All Rights Designed by ideamagix</p></div>
+           <div class="Term-condition"><p>Term And Condition</p></div>
+           <div class="privacy-policy"><p>Pivacy policy</p></div>
+            </div>
+
+        </div>
+     </footer>
+
+    </div>
+
+        <!-- javascript -->
+    
+
+</body>
+</html>
